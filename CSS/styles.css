@@ -198,6 +198,7 @@ body {
   color: var(--contact-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 9px;
 }
 .contact-header:hover,
 .contact-footer:hover {
@@ -208,6 +209,8 @@ body {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: white;
+  margin-top: 20px;
 }
 .logo {
   text-decoration: none;
@@ -220,6 +223,9 @@ body {
 }
 .logo-decoration {
   color: var(--brand-color);
+}
+.logo-footer {
+  color: #ffffff;
 }
 .hide {
   display: none;
@@ -291,9 +297,11 @@ ul.team-pics > li > p {
 }
 .header-wrapper {
   display: flex;
-  margin: 24px 227px 25px 215px;
-  align-items: baseline;
+  padding: 24px 227px 25px 215px;
+  align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  width: 1600px;
 }
 
 .container {
@@ -315,6 +323,7 @@ ul.team-pics > li > p {
   display: flex;
   justify-content: flex-end;
   gap: 50px;
+  align-items: center;
 }
 p.text-lorem {
   width: 270px;
@@ -346,5 +355,37 @@ ul.team-pics > li {
   background-color: white;
   width: 270px;
   height: 368px;
+}
+.footer-wrapper {
+  background-color: var(--background-color-dark);
+  width: 1600px;
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 94px;
+  margin-left: 532px;
+  margin-bottom: 50px;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 215px;
+  margin-bottom: 94px;
+  gap: 30px;
+}
+ul.section-wrapper > li {
+  border: 1px solid #eeeeee;
+}
+ul.section-wrapper > li > h3 {
+  margin: 30px 24px 4px 24px;
+}
+ul.section-wrapper > li > p {
+  margin: 0px 24px 20px 24px;
 }
 /* . */
