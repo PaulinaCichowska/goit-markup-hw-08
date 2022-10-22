@@ -1,3 +1,137 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+}
+
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+abbr[title] {
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+summary {
+  display: list-item;
+}
+/* End normalize */
 :root {
   --brand-color: #2196f3;
   --background-color-dark: #2f303a;
@@ -5,6 +139,7 @@
   --text-color: #212121;
   --contact-color: #757575;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
@@ -95,9 +230,20 @@ body {
   font-size: 44px;
   letter-spacing: 0.06em;
   line-height: 1.36;
+  width: 696px;
+  text-align: center;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .background-section {
   background-color: var(--background-color-dark);
+  width: 1600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .title-lorem {
   font-size: 14px;
@@ -114,18 +260,23 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-.name {
+ul.team-pics > li > h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-.profession {
+ul.team-pics > li > p {
   font-size: 16px;
   line-height: 1.19;
   color: var(--contact-color);
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .title-decoration-portfolio {
   font-size: 18px;
@@ -138,3 +289,62 @@ body {
   color: var(--contact-color);
   letter-spacing: 0.03em;
 }
+.header-wrapper {
+  display: flex;
+  margin: 24px 227px 25px 215px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1200px;
+}
+.list-lorem {
+  margin: 94px 215px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  gap: 46px;
+  margin-right: 371px;
+  margin-left: 93px;
+}
+.list-contact-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+p.text-lorem {
+  width: 270px;
+  margin-top: 10px;
+  height: 75px;
+}
+.main-page-pictures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 50px 215px 94px 215px;
+}
+.team-pics {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 215px 0px 215px;
+}
+.team-background {
+  background-color: var(--background-color-light);
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+h2.title-list {
+  width: 1600px;
+}
+ul.team-pics > li {
+  background-color: white;
+  width: 270px;
+  height: 368px;
+}
+/* . */
