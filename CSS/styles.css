@@ -243,7 +243,6 @@ body {
 }
 .background-section {
   background-color: var(--background-color-dark);
-  width: 1600px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -297,18 +296,20 @@ ul.team-pics > li > p {
 }
 .header-wrapper {
   display: flex;
-  padding: 24px 227px 25px 215px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
-  width: 1600px;
 }
 
 .container {
-  width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
 }
 .list-lorem {
-  margin: 94px 215px;
+  margin-top: 94px;
+  margin-bottom: 94px;
   display: flex;
   gap: 30px;
   justify-content: space-between;
@@ -316,8 +317,6 @@ ul.team-pics > li > p {
 .navigation {
   display: flex;
   gap: 46px;
-  margin-right: 371px;
-  margin-left: 93px;
 }
 .list-contact-header {
   display: flex;
@@ -326,16 +325,13 @@ ul.team-pics > li > p {
   align-items: center;
 }
 p.text-lorem {
-  width: 270px;
   margin-top: 10px;
-  height: 75px;
 }
 .main-page-pictures {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin: 50px 215px 94px 215px;
 }
 .team-pics {
   display: flex;
@@ -344,12 +340,10 @@ p.text-lorem {
 }
 .team-background {
   background-color: var(--background-color-light);
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 h2.title-list {
-  width: 1600px;
 }
 ul.team-pics > li {
   background-color: white;
@@ -358,7 +352,6 @@ ul.team-pics > li {
 }
 .footer-wrapper {
   background-color: var(--background-color-dark);
-  width: 1600px;
   padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
