@@ -222,7 +222,6 @@ ul.team-pics > li {
   column-gap: 9px;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 215px;
 }
 .button-list {
   display: flex;
