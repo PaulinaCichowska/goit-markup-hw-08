@@ -239,7 +239,7 @@ ul.team-pics > li {
 }
 
 ul.section-wrapper > li {
-  flex-basis: calc(100%- (60px / 3));
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 ul.section-wrapper > li > img {
