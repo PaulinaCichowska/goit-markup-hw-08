@@ -10,6 +10,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -187,12 +195,17 @@ ul.team-pics > li > p {
 .navigation {
   display: flex;
   gap: 46px;
+  padding-left: 0;
 }
 .list-contact-header {
   display: flex;
   justify-content: flex-end;
   gap: 50px;
   align-items: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 p.text-lorem {
   margin-top: 10px;
@@ -202,6 +215,7 @@ p.text-lorem {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  padding-top: 0px;
 }
 .team-pics {
   display: flex;
@@ -253,9 +267,4 @@ ul.section-wrapper > li > img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
