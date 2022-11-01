@@ -229,6 +229,7 @@ ul.team-pics > li {
   gap: 8px;
   padding-top: 94px;
   padding-bottom: 56px;
+  margin: 0;
 }
 
 .section-wrapper {
