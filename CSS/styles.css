@@ -18,6 +18,9 @@ h5,
 p {
   margin: 0;
 }
+ul {
+  padding: 0;
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -183,6 +186,16 @@ ul.team-pics > li > p {
   color: var(--contact-color);
   letter-spacing: 0.03em;
 }
+div.header-wrapper > a {
+  flex-grow: 1;
+}
+div.header-wrapper > ul {
+  flex-grow: 2;
+}
+ul.list-contact-header {
+  flex-grow: 1;
+}
+
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -201,7 +214,7 @@ ul.team-pics > li > p {
 .navigation {
   display: flex;
   gap: 46px;
-  padding-left: 0;
+  margin-right: 345px;
 }
 .list-contact-header {
   display: flex;
@@ -278,6 +291,28 @@ ul.section-wrapper > li > img {
   border-right: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
 }
-.list-contact-header:nth-child(1):before {
-  content: icon;
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--contact-color);
+}
+.icon-envelope:hover {
+  fill: var(--brand-color);
+}
+.icon-vector {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--contact-color);
+}
+.icon-vector:hover {
+  fill: var(--brand-color);
+}
+.icons-list {
+  display: flex;
+}
+.icon-antenna {
+  height: 70px;
+  width: 65.32px;
 }
