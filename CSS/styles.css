@@ -37,6 +37,8 @@ p {
 .buttons:hover {
   background: var(--brand-color);
   color: white;
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 .main-button {
   cursor: pointer;
@@ -124,6 +126,10 @@ p {
 }
 .background-section {
   background-color: var(--background-color-dark);
+  background-image: url(../images/background-main.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -257,6 +263,10 @@ ul.team-pics > li {
 ul.section-wrapper > li {
   flex-basis: calc((100% - 60px) / 3);
 }
+ul.section-wrapper > li:hover {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 1px 1px 0px #0000001f,
+    0px 4px 4px 0px #0000000f;
+}
 
 ul.section-wrapper > li > img {
   display: block;
@@ -267,4 +277,7 @@ ul.section-wrapper > li > img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
+}
+.list-contact-header:nth-child(1):before {
+  content: icon;
 }
