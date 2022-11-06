@@ -86,10 +86,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.contact-header:hover,
-.contact-footer:hover {
-  color: var(--brand-color);
-}
+
 .address {
   font-size: 14px;
   font-style: normal;
@@ -311,8 +308,51 @@ ul.section-wrapper > li > img {
 }
 .icons-list {
   display: flex;
+  justify-content: space-between;
+}
+.icons-list > li {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  /* position: absolute;
+} */
 }
 .icon-antenna {
   height: 70px;
-  width: 65.32px;
+  width: 65px;
+  margin: auto;
+  display: block;
+  margin-top: 25px;
+}
+.icon-clock {
+  height: 67px;
+  width: 66px;
+  margin: auto;
+  display: block;
+  margin-top: 25px;
+}
+.icon-computer {
+  height: 53px;
+  width: 70px;
+  margin: auto;
+  margin-top: 33px;
+  display: block;
+}
+.icon-astronaut {
+  height: 61px;
+  width: 55px;
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+}
+.icon-antenna:hover,
+.icon-clock:hover,
+.icon-computer:hover,
+.icon-astronaut:hover {
+  fill: var(--brand-color);
+}
+.contact-header:hover,
+.contact-footer:hover {
+  color: var(--brand-color);
 }
