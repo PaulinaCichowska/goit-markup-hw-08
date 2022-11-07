@@ -125,10 +125,15 @@ ul {
   margin-bottom: 30px;
 }
 .background-section {
-  background-color: var(--background-color-dark);
-  background-image: url(../images/background-main.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(255, 255, 255, 0)
+    ),
+    url(../images/background-main.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
+  background-size: 1600px 600px;
+  background-color: transparent;
 
   height: 600px;
   display: flex;
