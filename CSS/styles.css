@@ -356,3 +356,54 @@ ul.section-wrapper > li > img {
 .contact-footer:hover {
   color: var(--brand-color);
 }
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+.icon-twitter {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+.icon-facebook {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+.icon-lindekin {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+.icon-instagram-background,
+.icon-twitter-background,
+.icon-facebook-background,
+.icon-lindekin-background {
+  margin: auto;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  background: #2196f3;
+}
+.list-social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
