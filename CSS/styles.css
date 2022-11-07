@@ -245,15 +245,18 @@ ul.team-pics > li {
   background-color: white;
 }
 .footer-wrapper {
-  background-color: var(--background-color-dark);
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   column-gap: 9px;
   align-items: flex-start;
   justify-content: center;
 }
+.background-footer {
+  background-color: var(--background-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .button-list {
   display: flex;
   justify-content: center;
@@ -344,30 +347,13 @@ ul.section-wrapper > li > img {
   color: var(--brand-color);
 }
 
-.icon-instagram {
+.icon-sm-John {
   fill: #afb1b8;
   display: block;
   margin: auto;
   margin-top: 12px;
 }
-.icon-twitter {
-  fill: #afb1b8;
-  display: block;
-  margin: auto;
-  margin-top: 12px;
-}
-.icon-facebook {
-  fill: #afb1b8;
-  display: block;
-  margin: auto;
-  margin-top: 12px;
-}
-.icon-lindekin {
-  fill: #afb1b8;
-  display: block;
-  margin: auto;
-  margin-top: 12px;
-}
+
 .icon-instagram-background,
 .icon-twitter-background,
 .icon-facebook-background,
@@ -425,28 +411,47 @@ ul.section-wrapper > li > img {
   fill: rgba(175, 177, 184, 1);
 }
 
-.icon-logo-2 {
-  fill: rgba(175, 177, 184, 1);
-}
-
-.icon-logo-3 {
-  fill: rgba(175, 177, 184, 1);
-}
-
-.icon-logo-4 {
-  fill: rgba(175, 177, 184, 1);
-}
-
-.icon-logo-5 {
-  fill: rgba(175, 177, 184, 1);
-}
-
-.icon-logo-6 {
-  fill: rgba(175, 177, 184, 1);
-}
 .icon-logo-background:hover {
   border: 1px solid #2196f3;
 }
 .icon-logo-ul > li:hover svg {
   fill: var(--brand-color);
+}
+.icon-sm {
+  margin: auto;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.icon-sm-footer {
+  fill: #afb1b8;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+.flex-footer {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.join {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.icon-sm-flex {
+  display: flex;
+  gap: 10px;
+}
+.icon-sm:hover {
+  background-color: var(--brand-color);
+}
+
+.icon-sm-flex > li:hover svg {
+  fill: rgba(255, 255, 255, 1);
 }
