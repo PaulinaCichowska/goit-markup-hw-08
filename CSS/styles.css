@@ -289,22 +289,13 @@ ul.section-wrapper > li > img {
   padding: 20px 24px 20px 24px;
 }
 .icon-envelope {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: var(--contact-color);
 }
-.icon-envelope:hover {
-  fill: var(--brand-color);
-}
+
 .icon-vector {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: var(--contact-color);
-}
-.icon-vector:hover {
-  fill: var(--brand-color);
 }
 .icons-list {
   display: flex;
@@ -319,31 +310,23 @@ ul.section-wrapper > li > img {
 } */
 }
 .icon-antenna {
-  height: 70px;
-  width: 65px;
   margin: auto;
   display: block;
   margin-top: 25px;
 }
 .icon-clock {
-  height: 67px;
-  width: 66px;
   margin: auto;
   display: block;
   margin-top: 25px;
 }
 .icon-computer {
-  height: 53px;
-  width: 70px;
   margin: auto;
-  margin-top: 33px;
+  margin-top: 25px;
   display: block;
 }
 .icon-astronaut {
-  height: 61px;
-  width: 55px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 25px;
   display: block;
 }
 .icon-antenna:hover,
@@ -352,37 +335,34 @@ ul.section-wrapper > li > img {
 .icon-astronaut:hover {
   fill: var(--brand-color);
 }
+.contact-header:hover svg,
+.contact-footer:hover svg {
+  fill: var(--brand-color);
+}
 .contact-header:hover,
 .contact-footer:hover {
   color: var(--brand-color);
 }
+
 .icon-instagram {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
   display: block;
   margin: auto;
   margin-top: 12px;
 }
 .icon-twitter {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
   display: block;
   margin: auto;
   margin-top: 12px;
 }
 .icon-facebook {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
   display: block;
   margin: auto;
   margin-top: 12px;
 }
 .icon-lindekin {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
   display: block;
   margin: auto;
@@ -397,13 +377,76 @@ ul.section-wrapper > li > img {
   width: 44px;
   height: 44px;
   border-radius: 100%;
+  background: white;
+}
+.icon-instagram-background:hover,
+.icon-twitter-background:hover,
+.icon-facebook-background:hover,
+.icon-lindekin-background:hover,
+.icon-instagram:hover {
   background: #2196f3;
 }
+
 .list-social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   margin-bottom: 30px;
   margin-left: 32px;
   margin-right: 32px;
+}
+.list-social-media > li:hover svg {
+  fill: rgba(255, 255, 255, 1);
+}
+.our-clients {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-clients-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.icon-logo-ul {
+  display: flex;
+  gap: 30px;
+}
+.icon-logo-background {
+  margin-top: 50px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 17.71px 32px 14.25px 32px;
+}
+.icon-logo {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.icon-logo-2 {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.icon-logo-3 {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.icon-logo-4 {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.icon-logo-5 {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.icon-logo-6 {
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-logo-background:hover {
+  border: 1px solid #2196f3;
+}
+.icon-logo-ul > li:hover svg {
+  fill: var(--brand-color);
 }
