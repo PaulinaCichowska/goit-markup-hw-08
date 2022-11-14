@@ -375,18 +375,18 @@ ul.section-wrapper > li > img {
 .icon-facebook-background,
 .icon-lindekin-background {
   margin: auto;
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 100%;
   background: white;
-  transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-instagram-background:hover,
 .icon-twitter-background:hover,
 .icon-facebook-background:hover,
-.icon-lindekin-background:hover,
-.icon-instagram:hover {
+.icon-lindekin-background:hover {
   background-color: #2196f3;
 }
 
@@ -429,13 +429,14 @@ ul.section-wrapper > li > img {
   fill: rgba(175, 177, 184, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-logo:hover {
+  fill: var(--brand-color);
+}
 
 .icon-logo-background:hover {
   border: 1px solid #2196f3;
 }
-.icon-logo-ul > li:hover svg {
-  fill: var(--brand-color);
-}
+
 .icon-sm {
   margin: auto;
   display: block;
@@ -446,7 +447,7 @@ ul.section-wrapper > li > img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-sm-footer {
-  fill: #afb1b8;
+  fill: #fff;
   display: block;
   margin: auto;
   margin-top: 12px;
@@ -527,8 +528,7 @@ ul.section-wrapper > li > img {
 }
 .hidden-box {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  height: 100%;
   background-color: #2196f3e5;
   padding-top: 49px;
   padding-left: 24px;
