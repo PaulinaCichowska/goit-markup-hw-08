@@ -437,19 +437,55 @@
     </footer>
     <div class="backdrop is-hi" data-modal>
       <div class="modal">
-        <form>
-          <label class="label-info">
-            <input type="name" />
-          </label>
-          <label class="label-info">
-            <input typ="tel" />
-          </label>
-          <label class="label-info">
-            <input type="email" />
-          </label>
-          <label class="label-info">
-            <input type="textarea" />
-          </label>
+        <h2 class="modal-h2">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="modal-form">
+          <fieldset class="fs-modal">
+            <label for="modal-name">Imie </label>
+            <svg height="12" width="12" class="modal-svg">
+              <use href="./images/icons.svg.svg#icon-name"></use>
+            </svg>
+            <input
+              id="modal-name"
+              name="modal-name"
+              type="text"
+              class="input-date"
+            />
+          </fieldset>
+          <fieldset class="fs-modal">
+            <label for="modal-tel">Telefon </label>
+            <svg height="13" width="13" class="modal-svg">
+              <use href="./images/icons.svg.svg#icon-tel"></use>
+            </svg>
+            <input
+              id="modal-tel"
+              type="tel"
+              name="modal-tel"
+              class="input-date"
+            />
+          </fieldset>
+          <fieldset class="fs-modal">
+            <label for="modal-email"> Emial </label>
+            <svg height="15" width="15" class="modal-svg">
+              <use href="./images/icons.svg.svg#icon-envelope-2"></use>
+            </svg>
+            <input
+              id="modal-email"
+              name="modal-email"
+              type="email"
+              class="input-date"
+            />
+          </fieldset>
+          <fieldset class="fs-textarea-modal">
+            <label for="modal-textarea">Komentarz</label>
+            <textarea
+              placeholder="Wprowadź tekst"
+              id="modal-textarea"
+              name="modal-textarea"
+              class="modal-textarea"
+              rows="6"
+            >
+            </textarea>
+          </fieldset>
         </form>
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-x">
