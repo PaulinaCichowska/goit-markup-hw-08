@@ -500,7 +500,6 @@ ul.section-wrapper > li > img {
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   bottom: 0;
-  z-index: 2;
 }
 .navigation > li {
   position: relative;
@@ -637,6 +636,7 @@ ul.section-wrapper > li > img {
   letter-spacing: 0.06em;
   color: #ffffff;
   position: relative;
+  cursor: pointer;
 }
 .icon-send {
   position: absolute;
@@ -656,12 +656,13 @@ ul.section-wrapper > li > img {
 .fs-modal {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   position: relative;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form label {
+.modal-form fieldset label {
   position: absolute;
-  top: -20px;
+  top: -17px;
   left: -1px;
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -671,12 +672,14 @@ ul.section-wrapper > li > img {
   position: absolute;
   top: 12px;
   left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fs-textarea-modal {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   position: relative;
   padding: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-h2 {
@@ -698,4 +701,85 @@ ul.section-wrapper > li > img {
 
 .modal-textarea:focus {
   outline: none;
+}
+.rules,
+.politics {
+  color: var(--brand-color);
+}
+.rule:hover,
+.politics:hover {
+  color: #2196f3;
+}
+.text-checkbox {
+  font-size: 14px;
+  line-height: 24px;
+}
+.label-checkbox-modal {
+  position: relative;
+  cursor: pointer;
+  margin-top: 22px;
+  margin-left: 47px;
+  display: block;
+}
+.label-checkbox-modal input {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  left: -25px;
+  opacity: 0;
+}
+.label-checkbox-modal .span-modal {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: black 2px solid;
+}
+.icon-checked {
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  opacity: 0;
+}
+.label-checkbox-modal .input-modal-checkbox:checked + span .icon-checked {
+  fill: #ffffff;
+  opacity: 100%;
+}
+.label-checkbox-modal .input-modal-checkbox:checked + span {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+.submit {
+  padding: 10px 76px 10px 76px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.tx-al {
+  text-align: center;
+}
+.fs-modal .input-date:focus .modal-svg {
+  fill: red;
+}
+
+.fs-modal:has(input:focus) .modal-svg {
+  fill: var(--brand-color);
+}
+.fs-modal:has(input:focus) {
+  border-color: var(--brand-color);
+}
+.fs-textarea-modal:has(textarea:focus) {
+  border-color: var(--brand-color);
 }

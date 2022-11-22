@@ -435,7 +435,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hi" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal-h2">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modal-form">
@@ -464,7 +464,7 @@
             />
           </fieldset>
           <fieldset class="fs-modal">
-            <label for="modal-email"> Emial </label>
+            <label for="modal-email"> Email </label>
             <svg height="15" width="15" class="modal-svg">
               <use href="./images/icons.svg.svg#icon-envelope-2"></use>
             </svg>
@@ -486,6 +486,27 @@
             >
             </textarea>
           </fieldset>
+          <label
+            for="checkbox-modal"
+            class="label-checkbox-modal text-checkbox"
+          >
+            <input
+              id="checkbox-modal"
+              type="checkbox"
+              class="input-modal-checkbox"
+              name="modal-checkbox"
+            />
+            <span class="span-modal">
+              <svg height="15" width="15" class="icon-checked">
+                <use href="./images/icons.svg.svg#icon-ptaszek"></use>
+              </svg>
+            </span>
+            Oświadczam iż akceptuję <a href="#" class="rules">Regulamin</a> i
+            <a href="#" class="politics">Politykę Prywatności.</a>
+          </label>
+          <div class="tx-al">
+            <button class="submit" type="submit">Wyślij</button>
+          </div>
         </form>
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-x">
