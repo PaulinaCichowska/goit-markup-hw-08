@@ -613,6 +613,10 @@ ul.section-wrapper > li > img {
   height: 50px;
   padding: 15px 0 15px 15px;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-newsletter:hover {
+  border-color: var(--brand-color);
 }
 .input-newsletter:focus {
   outline: none;
