@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,7 +69,7 @@
         <h1 class="main-section__heading">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
-        <button class="main-section-button" type="button" data-modal-open>
+        <button class="main-section__button" type="button" data-modal-open>
           Zamów&nbsp;usługe
         </button>
       </section>
@@ -453,7 +453,7 @@
         <h2 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modal__form">
           <fieldset class="modal__fieldset">
-            <label for="modal-name">Imie </label>
+            <label class="modal__label" for="modal-name">Imie </label>
             <svg height="12" width="12" class="modal__svg">
               <use href="./images/icons.svg.svg#icon-name"></use>
             </svg>
@@ -465,7 +465,7 @@
             />
           </fieldset>
           <fieldset class="modal__fieldset">
-            <label for="modal-tel">Telefon </label>
+            <label class="modal__label" for="modal-tel">Telefon </label>
             <svg height="13" width="13" class="modal__svg">
               <use href="./images/icons.svg.svg#icon-tel"></use>
             </svg>
@@ -478,7 +478,7 @@
           </fieldset>
 
           <fieldset class="modal__fieldset">
-            <label for="modal-email"> Email </label>
+            <label class="modal__label" for="modal-email"> Email </label>
             <svg height="15" width="15" class="modal__svg">
               <use href="./images/icons.svg.svg#icon-envelope-2"></use>
             </svg>
@@ -490,7 +490,7 @@
             />
           </fieldset>
           <fieldset class="modal__fieldset__textarea">
-            <label for="modal-textarea">Komentarz</label>
+            <label class="modal__label" for="modal-textarea">Komentarz</label>
             <textarea
               placeholder="Wprowadź tekst"
               id="modal-textarea"
@@ -507,8 +507,8 @@
               class="modal__checkbox-input"
               name="modal-checkbox"
             />
-            <span class="icon-box">
-              <svg height="15" width="15" class="icon-box__svg">
+            <span class="modal__checkbox-box">
+              <svg height="15" width="15" class="modal__checkbox-svg">
                 <use href="./images/icons.svg.svg#icon-ptaszek"></use>
               </svg>
             </span>
@@ -524,8 +524,8 @@
             </button>
           </div>
         </form>
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-x">
+        <button type="button" class="modal__bnt--close" data-modal-close>
+          <svg class="modal__svg--close">
             <use
               width="11"
               height="11"

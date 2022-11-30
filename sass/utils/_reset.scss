@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
