@@ -3,10 +3,10 @@
   max-width: 1200px;
   width: 100%;
   padding: 0 15px;
-}
-.portfolio-section__list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 94px;
-  gap: 30px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+    gap: 30px;
+  }
 }

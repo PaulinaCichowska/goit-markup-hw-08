@@ -74,7 +74,7 @@
         </button>
       </section>
       <section class="second-section">
-        <h2 class="second-section--hide"><del>Lorem Ipsum</del></h2>
+        <h2 class="hide"><del>Lorem Ipsum</del></h2>
 
         <ul class="second-section__list">
           <li class="second-section__item">
@@ -338,33 +338,33 @@
       <section class="clients-section">
         <h2 class="clients-section__heading">Nasi klienci</h2>
         <ul class="clients-section__list">
-          <li class="clients-section_item">
-            <svg width="106" height="60" class="clients-section_icon">
+          <li class="clients-section__item">
+            <svg width="106" height="60" class="clients-section__icon">
               <use href="./images/icons.svg.svg#icon-Logo1"></use>
             </svg>
           </li>
-          <li class="clients-section_item">
-            <svg width="106" height="60" class="clients-section_icon">
+          <li class="clients-section__item">
+            <svg width="106" height="60" class="clients-section__icon">
               <use href="./images/icons.svg.svg#icon-Logo-1"></use>
             </svg>
           </li>
-          <li class="clients-section_item">
-            <svg width="106" height="60" class="clients-section_icon">
+          <li class="clients-section__item">
+            <svg width="106" height="60" class="clients-section__icon">
               <use href="./images/icons.svg.svg#icon-Logo-2"></use>
             </svg>
           </li>
-          <li class="clients-section_item">
-            <svg width="106" height="60" class="clients-section_icon">
+          <li class="clients-section__item">
+            <svg width="106" height="60" class="clients-section__icon">
               <use href="./images/icons.svg.svg#icon-Logo"></use>
             </svg>
           </li>
-          <li class="clients-section_item">
-            <svg width="106" height="60" class="clients-section_icon">
+          <li class="clients-section__item">
+            <svg width="106" height="60" class="clients-section__icon">
               <use href="./images/icons.svg.svg#icon-Logo-3"></use>
             </svg>
           </li>
-          <li class="clients-section_item">
-            <svg width="106" height="60" class="clients-section_icon">
+          <li class="clients-section__item">
+            <svg width="106" height="60" class="clients-section__icon">
               <use href="./images/icons.svg.svg#icon-Logo-4"></use>
             </svg>
           </li>
@@ -489,7 +489,7 @@
               class="modal__date"
             />
           </fieldset>
-          <fieldset class="modal__fieldset__textarea">
+          <fieldset class="modal__textarea-fieldset">
             <label class="modal__label" for="modal-textarea">Komentarz</label>
             <textarea
               placeholder="Wprowadź tekst"
@@ -500,28 +500,24 @@
             >
             </textarea>
           </fieldset>
-          <label for="checkbox-modal" class="modal__checkbox-group">
+          <label for="checkbox-modal" class="checkbox__group">
             <input
               id="checkbox-modal"
               type="checkbox"
-              class="modal__checkbox-input"
+              class="checkbox__input"
               name="modal-checkbox"
             />
-            <span class="modal__checkbox-box">
-              <svg height="15" width="15" class="modal__checkbox-svg">
+            <span class="checkbox__box">
+              <svg height="15" width="15" class="checkbox__svg">
                 <use href="./images/icons.svg.svg#icon-ptaszek"></use>
               </svg>
             </span>
             Oświadczam iż akceptuję
-            <a href="#" class="modal__checkbox-rules">Regulamin</a> i
-            <a href="#" class="modal__checkbox-politics"
-              >Politykę Prywatności.</a
-            >
+            <a href="#" class="checkbox__rules">Regulamin</a> i
+            <a href="#" class="checkbox__politics">Politykę Prywatności.</a>
           </label>
-          <div class="modal__checkbox-button-area">
-            <button class="modal__checkbox--submit" type="submit">
-              Wyślij
-            </button>
+          <div class="modal__button">
+            <button class="modal__button--submit" type="submit">Wyślij</button>
           </div>
         </form>
         <button type="button" class="modal__bnt--close" data-modal-close>

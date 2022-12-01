@@ -3,21 +3,20 @@
   height: 100%;
   border: none;
   resize: none;
-}
-.modal__textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal__textarea:focus {
-  outline: none;
-}
-.modal__fieldset__textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  position: relative;
-  padding: 10px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__fieldset__textarea:has(textarea:focus) {
-  border-color: var(--brand-color);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    outline: none;
+  }
+  &-fieldset {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    position: relative;
+    padding: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:has(textarea:focus) {
+      border-color: var(--brand-color);
+    }
+  }
 }
