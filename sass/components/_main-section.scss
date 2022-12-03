@@ -37,3 +37,8 @@
     padding: 16px 41px 16px 42px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-section {
+    background-size: cover;
+  }
+}

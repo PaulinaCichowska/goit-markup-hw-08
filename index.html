@@ -18,12 +18,49 @@
     />
   </head>
   <body>
+    <!-- mobile menu -->
+
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <div class="menu">
+        <button class="menu__X-button js-close-menu">
+          <svg width="25" height="25" class="menu__icon-close">
+            <use href="./images/icons.svg.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <ul class="menu__navigation">
+          <li class="menu__navigation__item">
+            <a class="menu__navigation__link" href="index.html">Agencja</a>
+          </li>
+          <li class="menu__navigation__item">
+            <a class="menu__navigation__link" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu__navigation__item">
+            <a class="menu__navigation__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- mobile menu end -->
     <header class="header">
       <div class="header__container">
         <div class="header__content">
           <a class="header__logo" href="#"
             ><span class="header__logo--color">Web</span>Studio</a
           >
+          <!-- mobile -->
+          <button
+            class="menu__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="35" height="35" class="menu__svg">
+              <use href="./images/icons.svg.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!-- mobile -->
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -532,5 +569,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
