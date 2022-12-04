@@ -1,0 +1,26 @@
+.menu__sm {
+  &__link {
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+  }
+}
+// .line::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   height: 22px;
+//   width: 1px;
+//   background-color: #21212133;
+// }
+
+.line {
+  border-right: 1px solid #21212133;
+  padding-right: 5px;
+}
