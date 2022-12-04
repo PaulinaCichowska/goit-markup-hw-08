@@ -6,17 +6,18 @@
     url(../images/background-main.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px 600px;
+  background-size: 480px 400px;
+  background-size: cover;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   &__heading {
     color: #ffffff;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     letter-spacing: 0.06em;
     line-height: 1.36;
     width: 696px;
@@ -37,8 +38,17 @@
     padding: 16px 41px 16px 42px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: $mobile) {
+}
+@media screen and (min-width: $tablet) {
+}
+@media screen and (min-width: $pc) {
   .main-section {
-    background-size: cover;
+    background-size: 1600px 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .main-section__heading {
+    font-size: 44px;
   }
 }

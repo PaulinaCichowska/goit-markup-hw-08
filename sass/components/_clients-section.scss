@@ -3,20 +3,22 @@
   padding-bottom: 94px;
   &__heading {
     font-style: normal;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 32px;
     text-align: center;
     letter-spacing: 0.03em;
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100vw;
     width: 100%;
     padding: 0 15px;
   }
   &__item {
+    flex-basis: calc((100% - 30px) / 2);
     margin-top: 50px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -32,5 +34,19 @@
     &:hover {
       fill: var(--brand-color);
     }
+  }
+}
+@media screen and (min-width: $mobile) {
+}
+@media screen and (min-width: $tablet) {
+}
+@media screen and (min-width: $pc) {
+  .clients-section__heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .clients-section__list {
+    max-width: 1200px;
+    flex-wrap: nowrap;
   }
 }

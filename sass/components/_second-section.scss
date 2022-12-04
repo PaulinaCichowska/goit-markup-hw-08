@@ -1,11 +1,15 @@
 .second-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100vw;
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   &__list {
     display: flex;
+    flex-direction: column;
+
     gap: 30px;
     justify-content: space-between;
     margin: 0;
@@ -13,7 +17,7 @@
   &__box {
     background-color: #f5f4fa;
     border-radius: 4px;
-    width: 270px;
+    width: 450px;
     height: 120px;
     margin-bottom: 30px;
     padding-top: 25px;
@@ -29,6 +33,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
   }
   &__paragraph {
     font-size: 14px;
@@ -36,5 +41,27 @@
     letter-spacing: 0.03em;
     line-height: 1.71;
     margin-top: 10px;
+  }
+}
+@media screen and (min-width: $mobile) {
+}
+@media screen and (min-width: $tablet) {
+}
+@media screen and (min-width: $pc) {
+  .second-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1200px;
+    &__list {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      margin: 0;
+      flex-direction: row;
+    }
+    &__box {
+      width: 270px;
+      height: 120px;
+    }
   }
 }
