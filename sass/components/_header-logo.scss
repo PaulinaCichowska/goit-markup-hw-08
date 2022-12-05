@@ -10,9 +10,11 @@
     color: var(--brand-color);
   }
 }
-@media screen and (min-width: $mobile) {
-}
+
 @media screen and (min-width: $tablet) {
+  .header__logo {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: $pc) {
   .header__logo {

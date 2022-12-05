@@ -43,6 +43,10 @@
     text-align: center;
     margin-bottom: 30px;
   }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (min-width: $mobile) {
 }
@@ -52,10 +56,6 @@
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .team__img {
-    height: 260px;
-    width: 270px;
   }
   .team__heading {
     font-size: 36px;

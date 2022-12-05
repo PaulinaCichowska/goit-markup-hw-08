@@ -11,8 +11,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  @media screen and (min-width: $mobile) {
-  }
+
   @media screen and (min-width: $tablet) {
     .header__container {
       padding-top: 26px;

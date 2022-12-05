@@ -3,9 +3,9 @@
     position: relative;
     cursor: pointer;
     margin-top: 22px;
-    margin-left: 47px;
+    margin-left: 28px;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
   }
   &__rules {
@@ -54,4 +54,17 @@
 .checkbox__group .checkbox__input:checked + span {
   background-color: var(--brand-color);
   border-color: var(--brand-color);
+}
+@media screen and (min-width: $pc) {
+  .checkbox {
+    &__group {
+      position: relative;
+      cursor: pointer;
+      margin-top: 22px;
+      margin-left: 47px;
+      display: block;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
 }

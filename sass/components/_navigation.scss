@@ -3,7 +3,6 @@
     &__list {
       display: flex;
       gap: 46px;
-      margin-right: 345px;
     }
     &__item {
       position: relative;
@@ -32,8 +31,13 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation {
     display: none;
+  }
+}
+@media screen and (min-width: $pc) {
+  .navigation {
+    margin-right: 345px;
   }
 }
