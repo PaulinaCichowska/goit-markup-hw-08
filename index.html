@@ -239,11 +239,17 @@
         <ul class="team__list">
           <li class="team__item">
             <img
-              src="./images/img_4.jpg"
-              width="450"
-              height="460"
               alt="Zdjęcie Johna Doe"
               class="team__img"
+              src="./images/Product-D-mobile-1.jpg"
+              srcset="
+                ./images/Product-D-mobile-2.jpg  960w,
+                ./images/Product-D-tablet-1.jpg  768w,
+                ./images/Product-D-tablet-2.jpg 1536w,
+                ./images/img_4.jpg              1600w,
+                ./images/Product-D-pc-2.jpg     3200w
+              "
+              sizes="(max-width: 768px) 480px, (min-width: 768px) 768px, (min-width: 1200px) 1600px, 100vw"
             />
 
             <h3 class="team__name">John Doe</h3>

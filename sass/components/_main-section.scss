@@ -3,10 +3,10 @@
       rgba(47, 48, 58, 0.4),
       rgba(255, 255, 255, 0)
     ),
-    url(../images/background-main.jpg);
+    url(../images/Header-img-mobile-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
+  background-size: 320px 240px;
   background-size: cover;
   background-color: transparent;
   display: flex;
@@ -20,10 +20,10 @@
     font-size: 26px;
     letter-spacing: 0.06em;
     line-height: 1.36;
-    width: 696px;
     text-align: center;
     margin: 0;
     margin-bottom: 30px;
+    word-wrap: break-word;
   }
   &__button {
     cursor: pointer;
@@ -38,17 +38,45 @@
     padding: 16px 41px 16px 42px;
   }
 }
-@media screen and (min-width: $mobile) {
-}
+
 @media screen and (min-width: $tablet) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0)
+      )
+      url(../images/Header-img-tablet-1.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (min-width: $tablet) {
+  .main-section {
+    background-image: url(../images/Header-img-tablet-2.jpg);
+  }
 }
 @media screen and (min-width: $pc) {
   .main-section {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../images/background-main.jpg);
     background-size: 1600px 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
   .main-section__heading {
     font-size: 44px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (min-width: $pc) {
+  .main-section {
+    background-image: url(../images/Header-img-pc-2.jpg);
   }
 }
