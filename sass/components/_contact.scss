@@ -3,8 +3,10 @@
     &__list {
       display: flex;
       justify-content: flex-end;
-      gap: 50px;
       align-items: center;
+      gap: 10px;
+      flex-direction: column;
+      margin: 0;
     }
     &__svg-1 {
       margin-right: 10px;
@@ -44,5 +46,16 @@
 @media screen and (max-width: 768px) {
   .contact {
     display: none;
+  }
+}
+
+@media screen and(min-width:$pc) {
+  .contact {
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+      gap: 50px;
+      align-items: center;
+    }
   }
 }

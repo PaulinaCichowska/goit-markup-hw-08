@@ -18,23 +18,92 @@
     />
   </head>
   <body>
+    <!-- mobile menu -->
+
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <div class="menu">
+        <button class="menu__X-button js-close-menu">
+          <svg width="25" height="25" class="menu__icon-close">
+            <use href="./images/icons.svg.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="menu__navigation">
+            <li class="menu__navigation__item">
+              <a class="menu__navigation__link" href="index.html">Agencja</a>
+            </li>
+            <li class="menu__navigation__item">
+              <a class="menu__navigation__link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu__navigation__item">
+              <a class="menu__navigation__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__contact">
+          <ul class="menu__contact__list">
+            <li class="menu__contact__item">
+              <a class="menu__contact__link" href="tel:+48111111111">
+                +48&nbsp;111&nbsp;111&nbsp;111</a
+              >
+            </li>
+            <li class="menu__contact__item">
+              <a class="menu__contact__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <div class="menu__sm">
+            <ul class="menu__sm__list">
+              <li class="menu__sm__item">
+                <a href="#" class="menu__sm__link line">Instagram</a>
+              </li>
+              <li class="menu__sm__item">
+                <a href="#" class="menu__sm__link line">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="menu__sm__link line">Facebook</a>
+              </li>
+              <li class="menu__sm__item">
+                <a href="#" class="menu__sm__link">Lindekin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu end -->
     <header class="header">
       <div class="header__container">
         <div class="header__content">
           <a class="header__logo" href="#"
             ><span class="header__logo--color">Web</span>Studio</a
           >
+          <!-- mobile -->
+          <button
+            class="menu__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="35" height="35" class="menu__svg">
+              <use href="./images/icons.svg.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!-- mobile -->
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Agencja</a>
-              </li>
-              <li class="navigation__item">
                 <a
                   class="navigation__link navigation__link--current"
-                  href="portfolio.html"
-                  >Portfolio</a
+                  href="index.html"
+                  >Agencja</a
                 >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Kontakt</a>
@@ -98,13 +167,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_8.jpg"
-                alt="Laptop z otwartą stroną internetową"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_8.jpg,
+                  ./images/technocrack-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/technocrack-tablet@1.jpg,
+                    ./technocrack-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/technocrack-mobile@1.jpg"
+                  srcset="./images/technocrack-mobile@2.jpg x2"
+                  alt="Laptop z otwartą stroną internetową"
+                />
+              </picture>
             </div>
             <div class="card__border">
               <h3 class="card__title">Technocrack</h3>
@@ -121,15 +203,28 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_9.jpg"
-                alt="Piłkarze koszykówki New Orlean i Golden Star"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_9.jpg,
+                  ./images/dizajn-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/dizajn-tablet@1.jpg,
+                    ./dizajn-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/dizajn-mobile@1.jpg"
+                  srcset="./images/dizajn-mobile@2.jpg x2"
+                  alt="Piłkarze koszykówki New Orlean i Golden Star"
+                />
+              </picture>
             </div>
-            <div class="border">
+            <div class="card__border">
               <h3 class="card__title">Grafika New Orlean vs Golden Star</h3>
               <p class="card__caption">Dizajn</p>
             </div>
@@ -144,13 +239,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_10.jpg"
-                alt="Logo restauracji Seafood"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_10.jpg,
+                  ./images/aplikacja-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/aplikacja-tablet@1.jpg,
+                    ./aplikacja-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/aplikacja-mobile@1.jpg"
+                  srcset="./images/aplikacja-mobile@2.jpg x2"
+                  alt="Logo restauracji Seafood"
+                />
+              </picture>
             </div>
             <div class="card__border">
               <h3 class="card__title">Restauracja Seafood</h3>
@@ -167,13 +275,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_11.jpg"
-                alt="Czarne słuchawki"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_11.jpg,
+                  ./images/projekt-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/projekt-tablet@1.jpg,
+                    ./projekt-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/projekt-mobile@1.jpg"
+                  srcset="./images/projekt-mobile@2.jpg x2"
+                  alt="Czarne słuchawki"
+                />
+              </picture>
             </div>
             <div class="card__border">
               <h3 class="card__title">Projekt Prime</h3>
@@ -213,13 +334,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_13.jpg"
-                alt="Monitor"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_12.jpg,
+                  ./images/boxes-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/boxes-tablet@1.jpg,
+                    ./boxes-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/boxes-mobile@1.jpg"
+                  srcset="./images/boxes-mobile@2.jpg x2"
+                  alt="Monitor"
+                />
+              </picture>
             </div>
             <div class="card__border">
               <h3 class="card__title">Inspiration has no Borders</h3>
@@ -236,13 +370,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_14.jpg"
-                alt="Magazyn Limited Edition"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_13.jpg,
+                  ./images/inspiration-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/inspiration-tablet@1.jpg,
+                    ./inspiration-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/inspiration-mobile@1.jpg"
+                  srcset="./images/inspiration-mobile@2.jpg x2"
+                  alt="Magazyn Limited Edition"
+                />
+              </picture>
             </div>
             <div class="card__border">
               <h3 class="card__title">Magazyn Limited Edition</h3>
@@ -259,14 +406,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_15.jpg"
-                alt="Metka Projekt LAB"
-                width="370"
-                height="294"
-                class="card__img"
-              />
-            </div>
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_14.jpg,
+                  ./images/magazyn-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/magazyn-tablet@1.jpg,
+                    ./magazyn-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/magazyn-mobile@1.jpg"
+                  srcset="./images/magazyn-mobile@2.jpg x2"
+                  alt="Metka Projekt LAB"
+                />
+              </picture>
             <div class="card__border">
               <h3 class="card__title">Projekt LAB</h3>
               <p class="card__caption">Marketing</p>
@@ -282,13 +441,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="./images/img_16.jpg"
-                alt="Pisanie na laptopie"
-                width="370"
-                height="294"
-                class="card__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img_15.jpg,
+                  ./images/growing-pc@2.jpg x2 "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/growing-tablet@1.jpg,
+                    ./growing-tablet@2.jpg x2
+                  "
+                />
+                <img
+                  class="card__img"
+                  src="./images/growing-mobile@1.jpg"
+                  srcset="./images/growing-mobile@2.jpg x2"
+                  alt="Pisanie na laptopie"
+                />
+              </picture>
             </div>
             <div class="card__border">
               <h3 class="card__title">Growing Business</h3>

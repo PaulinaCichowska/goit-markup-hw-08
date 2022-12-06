@@ -240,17 +240,23 @@
           <li class="team__item">
             <picture>
               <source
-                media="(min-width: 768px) and (max-width: 1199px)"
-                srcset="./images/img_4.jpg"
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/Product-D-tablet-1.jpg,
+                  ./images/Product-D-tablet-2.jpg x2
+                "
               />
-              <source media="(min-width: 1200px)" srcset="./images/img_3.jpg" />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/img_4.jpg ,./images/Product-D-pc-2.jpg x2 "
+              />
               <img
                 class="team__img"
                 src="./images/Product-D-mobile-1.jpg"
-                alt="user-image"
+                srcset="./images/Product-D-mobile-2.jpg x2"
+                alt="zdjecię Johna Doe"
               />
             </picture>
-
             <h3 class="team__name">John Doe</h3>
             <p class="team__work">Product Designer</p>
             <ul class="sm-list">
@@ -285,13 +291,25 @@
             </ul>
           </li>
           <li class="team__item">
-            <img
-              src="./images/img_5.jpg"
-              width="450"
-              height="460"
-              alt="Zdjęcie Johna Doe"
-              class="team__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/frontend-d-tablet@1.jpg,
+                  ./images/frontend-d-tablet@2.jpg x2
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/frontend-d-pc@2jpg x2, ./images/img_6.jpg"
+              />
+              <img
+                src="./images/frontend-d-mobile@1.jpg"
+                srcset="./images/frontend-d-mobile@2.jpg x2"
+                alt="Zdjęcie Johna Doe"
+                class="team__img"
+              />
+            </picture>
             <h3 class="team__name">John Doe</h3>
             <p class="team__work">Frontend Developer</p>
             <ul class="sm-list">
@@ -326,13 +344,25 @@
             </ul>
           </li>
           <li class="team__item">
-            <img
-              src="./images/img_6.jpg"
-              width="450"
-              height="460"
-              alt="Zdjęcie Johna Doe"
-              class="team__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/marketing-tablet@1.jpg,
+                  ./images/marketing-D-tablet@2.jpg x2
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/marketing-D-pc@2jpg x2, ./images/img_7.jpg"
+              />
+              <img
+                src="./images/marketing-mobile@1.jpg"
+                srcset="./images/marketing-mobile@2.jpg x2"
+                alt="Zdjęcie Johna Doe"
+                class="team__img"
+              />
+            </picture>
             <h3 class="team__name">John Doe</h3>
             <p class="team__work">Marketing</p>
             <ul class="sm-list">
@@ -367,13 +397,24 @@
             </ul>
           </li>
           <li class="team__item">
-            <img
-              src="./images/img_7.jpg"
-              width="450"
-              height="460"
-              alt="Zdjęcie Johna Doe"
-              class="team__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/UI-tablet@1.jpg,
+                  ./images/UI-tablet@2.jpg x2
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/UI-pc@2jpg x2, ./images/img_8.jpg"
+              />
+              <img
+                src="./images/UI-mobile@1.jpg"
+                srcset="./images/UI-mobile@2.jpg x2"
+                alt="Zdjęcie Johna Doe"
+                class="team__img"
+              />
             <h3 class="team__name">John Doe</h3>
             <p class="team__work">UI Designer</p>
             <ul class="sm-list">
@@ -453,7 +494,7 @@
               <span class="footer__logo--color">Web</span>Studio</a
             >
             <address class="address">
-              m. Warszawa, Aleje Jerozolimskie 21
+              m. Warszawa, Aleje Jerozolimskie&nbsp;21
               <ul class="address__list">
                 <li>
                   <a class="address__link" href="mailto:info@example.com"
