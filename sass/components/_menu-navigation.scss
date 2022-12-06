@@ -2,10 +2,9 @@
   display: flex;
   gap: 25px;
   flex-direction: column;
-  margin-bottom: 20vh;
-  &__item {
-    display: block;
-  }
+  padding-top: 30px;
+  margin-bottom: 40vh;
+
   &__link {
     text-decoration: none;
     color: var(--text-color);

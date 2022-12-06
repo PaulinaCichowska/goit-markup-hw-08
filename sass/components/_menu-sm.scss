@@ -1,14 +1,18 @@
 .menu__sm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   &__link {
     color: var(--brand-color);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
   }
   &__list {
     display: flex;
     flex-direction: row;
     gap: 5px;
     position: relative;
+    flex-wrap: wrap;
   }
 }
 // .line::after {

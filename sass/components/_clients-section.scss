@@ -44,13 +44,12 @@
     flex-basis: calc((100% - 60px) / 3);
   }
 
-  .clients-section__list {
-  }
   .clients-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
+
 @media screen and (min-width: $pc) {
   .clients-section__heading {
     font-size: 36px;
