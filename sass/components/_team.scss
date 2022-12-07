@@ -51,6 +51,11 @@
 @media screen and (min-width: $mobile) {
 }
 @media screen and (min-width: $tablet) {
+  .team__list {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 60px) / 2);
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: $pc) {
   .team {
@@ -64,5 +69,6 @@
   .team__list {
     max-width: 1200px;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
